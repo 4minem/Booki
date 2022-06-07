@@ -15,22 +15,24 @@
   </head>
   <body>
     <div id="bloc_page">
+      <!---Header-->
+      <header>
+        <div id="logo">
+          <img src="images/logo/Booki.png" alt="Logo de Booki" />
+        </div>
+
+        <!--Navigation-->
+        <nav>
+          <ul>
+            <li><a href="#section_1">Hébergements</a></li>
+            <li><a href="#section_2">Activités</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Page-->
+
       <div id="page">
-        <!---Header-->
-        <header>
-          <div id="logo">
-            <img src="images/logo/Booki.png" alt="Logo de Booki" />
-          </div>
-
-          <!--Navigation-->
-          <nav>
-            <ul>
-              <li><a href="#section_1">Hébergements</a></li>
-              <li><a href="#section_2">Activités</a></li>
-            </ul>
-          </nav>
-        </header>
-
         <!--Titre de la page-->
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -61,47 +63,53 @@
 
         <!--Section-->
         <section id="section_1">
+
           <!--Hébergements à Marseille-->
           <div class="style_section" id="bloc_section_1">
             <h2>Hébergements à Marseille</h2>
-            <div id="liste_section_1">
-              <div>
-                <img
-                  src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                  alt="marcus-loke-WQJvWU_HZFo-unsplash"
-                />
+            <div id="ligne_section_1">
+              <div id="ligne_1_section_1">
+                <div class="image_section_1">
+                  <img
+                    src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="marcus-loke-WQJvWU_HZFo-unsplash"
+                  />
+                </div>
+                <div class="image_section_1">
+                  <img
+                    src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    alt="fred-kleber-gTbaxaVLvsg-unsplash"
+                  />
+                </div>
+                <div class="image_section_1">
+                  <img
+                    src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt="reisetopia-B8WIgxA_PFU-unsplash"
+                  />
+                </div>
               </div>
-              <div>
-                <img
-                  src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                  alt="fred-kleber-gTbaxaVLvsg-unsplash"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                  alt="reisetopia-B8WIgxA_PFU-unsplash"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                  alt="annie-spratt-Eg1qcIitAuA-unsplash"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                  alt="nicate-lee-kT-ZyaiwBe0-unsplash"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                  alt="febrian-zakaria-M6S1WvfW68A-unsplash"
-                />
+              <div id="ligne_2_section_1">
+                <div class="image_section_1">
+                  <img
+                    src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    alt="annie-spratt-Eg1qcIitAuA-unsplash"
+                  />
+                </div>
+                <div class="image_section_1">
+                  <img
+                    src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    alt="nicate-lee-kT-ZyaiwBe0-unsplash"
+                  />
+                </div>
+                <div class="image_section_1">
+                  <img
+                    src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    alt="febrian-zakaria-M6S1WvfW68A-unsplash"
+                  />
+                </div>
               </div>
             </div>
+
             <a id="afficher_plus" href="#">Afficher plus</a>
           </div>
 
@@ -109,19 +117,19 @@
           <aside class="style_section" id="bloc_aside">
             <h2>Les plus populaires</h2>
             <div id="liste_aside">
-              <div>
+              <div class="image_aside">
                 <img
                   src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                   alt="emile-guillemot-Bj_rcSC5XfE-unsplash"
                 />
               </div>
-              <div>
+              <div class="image_aside">
                 <img
                   src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                   alt="aw-creative-VGs8z60yT2c-unsplash"
                 />
               </div>
-              <div>
+              <div class="image_aside">
                 <img
                   src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                   alt="febrian-zakaria-sjvU0THccQA-unsplash"
@@ -131,56 +139,61 @@
           </aside>
         </section>
         <!--Activités à Marseille-->
-        <section class="section_2">
+        <section id="section_2">
           <h2>Activités à Marseille</h2>
-          <div id="section_2">
+          <div class="section_2">
             <div class="colonne">
               <div class="grande_image">
                 <img
-                  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                  src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                   alt="reno-laithienne-QUgJhdY5Fyk-unsplash"
                 />
               </div>
             </div>
             <div class="colonne">
-              <div class="moyenne_image">
-                <img
-                  src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                  alt="paul-hermann-QFTrLdQIRhI-unsplash"
-                />
-              </div>
-              <div class="petite_image">
-                <img
-                  src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                  alt=""
-                />
+              <div class="colonne_double">
+                <div class="moyenne_image">
+                  <img
+                    src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    alt="paul-hermann-QFTrLdQIRhI-unsplash"
+                  />
+                </div>
+                <div class="petite_image">
+                  <img
+                    src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div class="colonne">
               <div class="grande_image">
                 <img
-                  src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                  src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                   alt="kilyan-sockalingum-NR8-cBCN3aI-unsplash"
                 />
               </div>
             </div>
             <div class="colonne">
-              <div class="petite_image">
-                <img
-                  src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                  alt="florian-wehde-xW9e8gdotxI-unsplash"
-                />
-              </div>
-              <div class="moyenne_image">
-                <img
-                  src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                  alt="lena-paulin-wH2-EJoDcV0-unsplash"
-                />
+              <div class="colonne_double">
+                <div class="image">
+                  <img
+                    src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    alt="florian-wehde-xW9e8gdotxI-unsplash"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    alt="lena-paulin-wH2-EJoDcV0-unsplash"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </section>
       </div>
+      </section>
+
       <!--Footer-->
       <footer>
         <div id="a_propos">

@@ -137,7 +137,7 @@ table {
 
 /* Page */
 
-#bloc_page {
+div#bloc_page {
   max-width: 992px;
   margin-right: auto;
 }
@@ -158,6 +158,7 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
+  padding: 5%;
 }
 
 #logo img {
@@ -165,6 +166,11 @@ header {
 }
 
 /* Navigation */
+
+nav {
+  padding-right: 5%;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -183,12 +189,18 @@ nav a:hover {
 h1 {
   font-weight: bold;
   font-size: larger;
+  padding-bottom: 1%;
+}
+
+p {
+  padding-bottom: 1%;
 }
 
 /* Fonction recherche */
 
 #rechercher {
   display: flex;
+  padding-bottom: 3%;
 }
 
 input {
@@ -230,37 +242,50 @@ button {
 #section_1 {
   display: flex;
   justify-content: space-between;
+  height: 50%;
 }
 
 .style_section {
   background: #f2f2f2;
   border-radius: 20px;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* Hébergements à Marseille */
 
 #bloc_section_1 {
   width: 65%;
-  position: relative;
-}
-#liste_section_1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  height: 100%;
 }
 
-#liste_section_1 img {
-  width: 170px;
-  height: 170px;
-  padding-bottom: 20px;
+#ligne_section_1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#ligne_1_section_1,
+#ligne_2_section_1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5%;
+  height: 200px;
+}
+
+#ligne_1_section_1 img,
+#ligne_2_section_1 img {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
   object-fit: cover;
 }
 
-#afficher_plus {
-  position: absolute;
-  bottom: 5%;
+.image_section_1 {
+  width: 100%;
+}
+
+#section_1 a {
   font-weight: bold;
   font-size: larger;
 }
@@ -269,38 +294,72 @@ button {
 #bloc_aside {
   width: 30%;
 }
+
 #liste_aside {
   display: flex;
   flex-direction: column;
+  height: 130px;
 }
-#bloc_aside img {
-  width: 200px;
-  height: 150px;
-  padding-bottom: 2em;
+#liste_aside img {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
   object-fit: cover;
+}
+
+.image_aside {
+  height: 100%;
 }
 
 /* Activités à Marseille */
 
 #section_2 {
+  height: 50%;
+}
+
+.section_2 {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 5%;
 }
 
-.colonne {
-  width: 25%;
-}
-
-.grande_image img {
-  width: 100%;
-  height: 100%;
-}
-
-.section_2 img {
+.colonne img {
   max-width: 100%;
   border-radius: 20px;
   object-fit: cover;
+  height: 100%;
+}
+
+.colonne {
+  width: 22%;
+  height: 300px;
+}
+.colonne_double {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.colonne_double img {
+  height: 100%;
+  width: 100%;
+}
+
+.grande_image {
+  height: 100%;
+}
+
+.moyenne_image {
+  height: 55%;
+}
+
+.petite_image {
+  height: 35%;
+}
+
+.image {
+  height: 45%;
 }
 
 /* Footer */
