@@ -112,6 +112,7 @@ section {
 body {
   line-height: 1;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 ol,
 ul {
@@ -134,10 +135,9 @@ table {
   border-spacing: 0;
 }
 
-body {
-  padding-right: 25%;
-  padding-top: 2%;
-}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+</style>
 
 /* Header */
 header {
@@ -150,6 +150,13 @@ header {
 #logo img {
   width: 100px;
 }
+
+div#bloc_page {
+  max-width: 992px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* Navigation */
 nav ul {
   display: flex;
@@ -161,42 +168,33 @@ nav li {
 }
 
 nav a:hover {
-  border-top: 1px solid blue;
-  color: blue;
+  border-top: 1px solid #0065fc;
+  color: #0065fc;
 }
 
 /* Titre de la page*/
 h1 {
   font-weight: bold;
   font-size: larger;
-  padding-bottom: 0.5em;
-  padding-left: 3%;
-}
-
-h3 {
-  padding-bottom: 1em;
-  padding-left: 3%;
 }
 
 /* Fonction recherche */
 
 #rechercher {
   display: flex;
-  padding-bottom: 2em;
-  padding-left: 3%;
 }
 
 input {
-  border-color: lightgrey;
+  border-color: #f2f2f2;
 }
 
 button {
-  background: blue;
-  color: white;
+  background: #0065fc;
+  color: #deedff;
   border-radius: 0em 1em 1em 0em;
   width: 10em;
   height: 3em;
-  border-color: blue;
+  border-color: #0065fc;
 }
 
 /* Filtre */
@@ -222,58 +220,74 @@ button {
 
 /* Section */
 
-#HM {
+#section_1 {
   display: flex;
   justify-content: space-between;
 }
 
-/* HM */
+.style_section {
+  padding: 2em;
+  background: #f2f2f2;
+  border-radius: 1em;
+}
 
-#HM h2 {
+/* Hébergements à Marseille */
+
+#section_1 h2 {
   font-size: large;
   font-weight: bold;
   padding-bottom: 1em;
 }
-#bloc_hebergement {
+#bloc_section_1 {
   width: 65%;
-  height: 600px;
-  background: lightgrey;
-  border-radius: 1em;
-  padding: 2em;
 }
-#liste_hebergement {
+#liste_section_1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#liste_hebergement img {
+#liste_section_1 img {
   width: 250px;
   height: 200px;
   padding-bottom: 2em;
 }
 
-/* LPP */
-#BP {
-  background: lightgrey;
-  height: 600px;
+/* Les plus populaire */
+#bloc_aside {
   width: 30%;
-  border-radius: 1em;
 }
-
-#BP img {
-  width: 250px;
+#liste_aside {
+  display: flex;
+  flex-direction: column;
+}
+#bloc_aside img {
+  width: 200px;
   height: 150px;
   padding-bottom: 2em;
 }
 
-/* AM */
+/* Activités à Marseille */
+
+#section_2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  width: 25%;
+}
+
+.column img {
+  max-width: 100%;
+}
 
 /* Footer */
 footer {
   display: flex;
   justify-content: space-evenly;
-  background: lightgrey;
+  background: #f2f2f2;
   height: 200px;
 }
 footer h2 {
