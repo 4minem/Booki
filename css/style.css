@@ -158,33 +158,40 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 5%;
 }
 
 #logo img {
   width: 100px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 /* Navigation */
 
-nav {
-  padding-right: 5%;
-}
-
 nav ul {
   display: flex;
-  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
 }
 
-nav li {
-  margin: 0 10%;
+nav ul li {
+  padding: 40px 25px;
+  border-top: 2px solid transparent;
+  margin: 0px 20px 0px 20px;
 }
 
-nav a:hover {
-  border-top: 1% solid #0065fc;
+nav ul li:hover {
+  border-color: #0065fc;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li:hover a {
   color: #0065fc;
 }
-
 /* Titre de la page*/
 h1 {
   font-weight: bold;
@@ -192,9 +199,9 @@ h1 {
   padding-bottom: 1%;
 }
 
-p {
+.subtitle {
   display: block;
-  padding-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 /* Fonction recherche */
@@ -279,6 +286,24 @@ button {
   justify-content: center;
 }
 
+.info {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.info i {
+  color: #0065fc;
+  border: 1px solid #deedff;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
 /* Section */
 
 #section_1 {
@@ -298,7 +323,7 @@ button {
 
 #bloc_section_1 {
   width: 65%;
-  height: 100%;
+  height: 530px;
 }
 
 #ligne_section_1 {
@@ -350,7 +375,7 @@ button {
 }
 
 .image_aside {
-  height: 100%;
+  height: 115%;
 }
 
 /* Activités à Marseille */
@@ -407,9 +432,13 @@ button {
 /* Footer */
 footer {
   display: flex;
-  justify-content: space-evenly;
   background: #f2f2f2;
   height: 200px;
+}
+
+.footer_colonne {
+  padding-right: 10%;
+  padding-left: 3%;
 }
 
 footer li {
