@@ -243,6 +243,11 @@ button span {
   padding-bottom: 3%;
 }
 
+li.filtre:hover {
+  cursor: pointer;
+  background-color: #deebff;
+}
+
 #bloc_filtre p {
   margin-right: 10px;
   font-weight: bold;
@@ -361,6 +366,11 @@ a.image_hebergement {
   border-radius: 20px 20px 20px 20px;
 }
 
+a.image_hebergement:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #0065fc;
+}
+
 .etoile_hebergement {
   background: white;
   border-radius: 0px 0px 15px 15px;
@@ -442,6 +452,11 @@ a.image_hebergement {
   margin-bottom: 10%;
 }
 
+#bloc_populaire a:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #0065fc;
+}
+
 .etoile_populaire {
   background: white;
   width: 65%;
@@ -498,7 +513,7 @@ a.image_hebergement {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 165px;
+  height: 80%;
 }
 
 .moyenne_image h3 {
@@ -540,12 +555,22 @@ a.image_hebergement {
   border-radius: 20px 20px 20px 20px;
 }
 
+.grande_image:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #0065fc;
+}
+
 .moyenne_image {
   height: 55%;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 20px grey;
   border-radius: 20px 20px 20px 20px;
+}
+
+.moyenne_image:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #0065fc;
 }
 
 .petite_image {
@@ -556,12 +581,22 @@ a.image_hebergement {
   border-radius: 20px 20px 20px 20px;
 }
 
+.petite_image:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #0065fc;
+}
+
 .image {
   height: 45%;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 20px grey;
   border-radius: 20px 20px 20px 20px;
+}
+
+.image:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #0065fc;
 }
 
 .bloc_colonne h3 {
