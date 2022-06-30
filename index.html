@@ -8,8 +8,14 @@
     <link
       rel="stylesheet"
       type="text/css"
+      href="css/tablette.css"
+      media="all and (max-width: 991px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
       href="css/mobile.css"
-      media="screen and (max-width: 768px)"
+      media="all and (max-width: 767px)"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,14 +56,17 @@
 
         <!--Fonction recherche-->
         <div id="rechercher">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="fa-solid fa-location-dot"></i>
           <input
             type="Rechercher"
             id="ville"
             name="ville"
             placeholder="Marseille, France"
           />
-          <button>Rechercher</button>
+          <button>
+            <span>Rechercher</span>
+            <i class="fas fa-search"></i>
+          </button>
         </div>
 
         <!--Filtre-->
@@ -75,7 +84,7 @@
               <i class="fa-solid fa-heart"></i><a href="#">Romantique</a>
             </li>
             <li class="filtre">
-              <i class="fa-solid fa-dog"></i><a href="#">Animaux</a>
+              <i class="fa-solid fa-dog"></i><a href="#">Animaux autorisés</a>
             </li>
           </ul>
         </div>
@@ -86,20 +95,20 @@
         </p>
 
         <!--Section-->
-        <section id="section_hebergement">
+        <section id="hebergement_populaire">
           <!--Hébergements à Marseille-->
-          <div id="bloc_section_1" class="style_section">
+          <div id="bloc_hebergement" class="style_section">
             <h2>Hébergements à Marseille</h2>
             <div id="bloc_article">
               <a
                 href="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                class="image_section_1"
+                class="image_hebergement"
               >
                 <img
                   src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                   alt="marcus-loke-WQJvWU_HZFo-unsplash"
                 />
-                <div class="etoile_section_1">
+                <div class="etoile_hebergement">
                   <h3>Auberge la Cannebière</h3>
                   <p>Nuit à partir de <span class="prix_gras">25€</span></p>
                   <div class="etoile_icone">
@@ -113,13 +122,13 @@
               </a>
               <a
                 href="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                class="image_section_1"
+                class="image_hebergement"
               >
                 <img
                   src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                   alt="fred-kleber-gTbaxaVLvsg-unsplash"
                 />
-                <div class="etoile_section_1">
+                <div class="etoile_hebergement">
                   <h3>Hôtel du port</h3>
                   <p>Nuit à partir de <span class="prix">52€</span></p>
 
@@ -134,13 +143,13 @@
               </a>
               <a
                 href="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                class="image_section_1"
+                class="image_hebergement"
               >
                 <img
                   src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                   alt="reisetopia-B8WIgxA_PFU-unsplash"
                 />
-                <div class="etoile_section_1">
+                <div class="etoile_hebergement">
                   <h3>Hôtel Les mouettes</h3>
                   <p>Nuit à partir de <span class="prix">76€</span></p>
 
@@ -155,13 +164,13 @@
               </a>
               <a
                 href="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                class="image_section_1"
+                class="image_hebergement"
               >
                 <img
                   src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                   alt="annie-spratt-Eg1qcIitAuA-unsplash"
                 />
-                <div class="etoile_section_1">
+                <div class="etoile_hebergement">
                   <h3>Hôtel de la mer</h3>
                   <p>Nuit à partir de <span class="prix">46€</span></p>
 
@@ -176,13 +185,13 @@
               </a>
               <a
                 href="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                class="image_section_1"
+                class="image_hebergement"
               >
                 <img
                   src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                   alt="nicate-lee-kT-ZyaiwBe0-unsplash"
                 />
-                <div class="etoile_section_1">
+                <div class="etoile_hebergement">
                   <h3>Auberge Le Panier</h3>
                   <p>Nuit à partir de <span class="prix_gras">23€</span></p>
 
@@ -197,13 +206,13 @@
               </a>
               <a
                 href="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                class="image_section_1"
+                class="image_hebergement"
               >
                 <img
                   src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                   alt="febrian-zakaria-M6S1WvfW68A-unsplash"
                 />
-                <div class="etoile_section_1">
+                <div class="etoile_hebergement">
                   <h3>Hôtel chez Amina</h3>
                   <p>Nuit à partir de <span class="prix">96€</span></p>
 
@@ -222,14 +231,14 @@
           </div>
 
           <!-- Les plus populaire -->
-          <aside class="style_section" id="bloc_aside">
+          <aside id="bloc_populaire" class="style_section">
             <div class="titre_populaire">
               <h2>Les plus populaires</h2>
               <span class="star-icone"><i class="fas fa-star noir"></i></span>
             </div>
-            <div id="liste_aside">
+            <div id="liste_populaire">
               <a
-                class="image_aside"
+                class="image_populaire"
                 href="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
               >
                 <img
@@ -237,9 +246,10 @@
                   alt="emile-guillemot-Bj_rcSC5XfE-unsplash"
                 />
                 <div class="etoile_populaire">
-                  <h3>Hôtel Le soleil du matin</h3>
-                  <p>Nuit à partir de <span class="prix">128€</span></p>
-
+                  <div class="texte_etoile">
+                    <h3>Hôtel Le soleil du matin</h3>
+                    <p>Nuit à partir de <span class="prix">128€</span></p>
+                  </div>
                   <div class="etoile_aside">
                     <i class="fas fa-star bleu"></i>
                     <i class="fas fa-star bleu"></i>
@@ -250,7 +260,7 @@
                 </div>
               </a>
               <a
-                class="image_aside"
+                class="image_populaire"
                 href="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg"
               >
                 <img
@@ -258,9 +268,10 @@
                   alt="aw-creative-VGs8z60yT2c-unsplash"
                 />
                 <div class="etoile_populaire">
-                  <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                  <p>Nuit à partir de <span class="prix">71€</span></p>
-
+                  <div class="texte_etoile">
+                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                    <p>Nuit à partir de <span class="prix">71€</span></p>
+                  </div>
                   <div class="etoile_aside">
                     <i class="fas fa-star bleu"></i>
                     <i class="fas fa-star bleu"></i>
@@ -271,7 +282,7 @@
                 </div>
               </a>
               <a
-                class="image_aside"
+                class="image_populaire"
                 href="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               >
                 <img
@@ -279,9 +290,10 @@
                   alt="febrian-zakaria-sjvU0THccQA-unsplash"
                 />
                 <div class="etoile_populaire">
-                  <h3>Hôtel Tout bleu et Blanc</h3>
-                  <p>Nuit à partir de <span class="prix">68€</span></p>
-
+                  <div class="texte_etoile">
+                    <h3>Hôtel Tout bleu et Blanc</h3>
+                    <p>Nuit à partir de <span class="prix">68€</span></p>
+                  </div>
                   <div class="etoile_aside">
                     <i class="fas fa-star bleu"></i>
                     <i class="fas fa-star bleu"></i>
@@ -295,9 +307,9 @@
           </aside>
         </section>
         <!--Activités à Marseille-->
-        <section id="section_2">
+        <section id="activites_marseille">
           <h2>Activités à Marseille</h2>
-          <div class="section_2">
+          <div class="bloc_colonne">
             <div class="colonne">
               <a
                 href="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
