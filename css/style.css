@@ -485,56 +485,48 @@ a.image_hebergement:hover {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 90%;
+  height: 360px;
 }
 
 .grande_image h3 {
   background: white;
   border-radius: 0px 0px 15px 15px;
-
-  height: 10%;
 }
 
 .image img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 77%;
+  height: 145px;
 }
 
 .image h3 {
   background: white;
   border-radius: 0px 0px 15px 15px;
-
-  height: 23%;
 }
 
 .moyenne_image img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 80%;
+  height: 190px;
 }
 
 .moyenne_image h3 {
   background: white;
   border-radius: 0px 0px 15px 15px;
-
-  height: 20%;
 }
 
 .petite_image img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 70%;
+  height: 100px;
 }
 
 .petite_image h3 {
   background: white;
   border-radius: 0px 0px 15px 15px;
-
-  height: 30%;
 }
 
 .colonne {
@@ -548,7 +540,6 @@ a.image_hebergement:hover {
 }
 
 .grande_image {
-  height: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 20px grey;
@@ -561,7 +552,6 @@ a.image_hebergement:hover {
 }
 
 .moyenne_image {
-  height: 55%;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 20px grey;
@@ -574,7 +564,6 @@ a.image_hebergement:hover {
 }
 
 .petite_image {
-  height: 35%;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 20px grey;
@@ -587,7 +576,6 @@ a.image_hebergement:hover {
 }
 
 .image {
-  height: 45%;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 20px grey;
